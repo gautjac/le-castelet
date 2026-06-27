@@ -43,7 +43,13 @@ struct RoomCaptureViewRep: UIViewRepresentable {
         }
     }
 
+    // An explicit Objective-C name keeps the runtime name stable. RoomPlan's delegate
+    // protocols are Obj-C protocols, and a *nested* NSObject subclass otherwise gets a
+    // mangled, unstable name that the compiler rejects ("unstable name when archiving via
+    // NSCoding"). This only surfaces in a real device build — the Simulator excludes this
+    // whole file via the `#if`, which is how it slipped through a Simulator-only check.
     @MainActor
+    @objc(LeCasteletRoomCaptureCoordinator)
     final class Coordinator: NSObject, RoomCaptureViewDelegate, RoomCaptureSessionDelegate {
         let controller: RoomScanController
         let onFinished: (Bool) -> Void
