@@ -61,6 +61,14 @@ struct RoomCaptureViewRep: UIViewRepresentable {
             self.onFinished = onFinished
         }
 
+        // In the iOS 27 SDK `RoomCaptureViewDelegate` refines `NSCoding`, so the compiler
+        // requires these. This coordinator is a live, in-memory delegate that is never
+        // archived — so encoding is a no-op and decoding fails fast.
+        nonisolated required init?(coder: NSCoder) {
+            fatalError("RoomCaptureViewRep.Coordinator is not archivable")
+        }
+        nonisolated func encode(with coder: NSCoder) { }
+
         // RoomCaptureView post-processes the raw scan into a final CapturedRoom. We let it run
         // its default processing (return true) and capture the result below.
         nonisolated func captureView(shouldPresent roomDataForProcessing: CapturedRoomData,
