@@ -1,0 +1,78 @@
+name: LeCastelet
+options:
+  bundleIdPrefix: com.jac
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Jac's personal Apple ID team — a stable team identifier keeps the signature stable
+    # so camera/RoomPlan grants persist across rebuilds.
+    DEVELOPMENT_TEAM: 9WZ66DZ69J
+    CODE_SIGN_STYLE: Automatic
+    DEAD_CODE_STRIPPING: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+
+targets:
+  # ----------------------------------------------------------------------------
+  # iOS — scan a room (RoomPlan) → hold it as a spinnable dollhouse (RealityKit)
+  # ----------------------------------------------------------------------------
+  LeCastelet:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Model
+      - path: Views
+      - path: Engine
+      # xcassets and the bundled sample USDZ are auto-classified into the Resources build
+      # phase by file type when listed here.
+      - path: Resources/Assets.xcassets
+      - path: Sample
+    info:
+      path: Resources/Info.plist
+      properties:
+        CFBundleDisplayName: Le Castelet
+        CFBundleName: LeCastelet
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        NSHumanReadableCopyright: "© 2026 Jacques Gautreau"
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        # RoomPlan drives the camera + LiDAR to scan a room. Required or the OS kills the app
+        # the moment the capture session asks for the camera.
+        NSCameraUsageDescription: "Le Castelet utilise la caméra pour numériser une pièce et la transformer en petite maquette que vous tenez dans la main."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jac.LeCastelet
+        PRODUCT_NAME: LeCastelet
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+
+# Explicit shared scheme so the app is always buildable from the CLI and Xcode.
+schemes:
+  LeCastelet:
+    build:
+      targets:
+        LeCastelet: all
+    run:
+      config: Debug
+    archive:
+      config: Release

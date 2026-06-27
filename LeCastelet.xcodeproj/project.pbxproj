@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A5524BCD6190388AD82B9C3 /* SampleRoom.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 52E14416D51FC944EEF5F185 /* SampleRoom.usdz */; };
+		50EDED42A2F825AE5B850FF6 /* ThumbnailRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3B911B241BD961516FA29 /* ThumbnailRenderer.swift */; };
+		54F85B0E84E440FC9C4A7311 /* LightingMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = D100412B811C5DA398C70BB8 /* LightingMood.swift */; };
+		55D62FE9803985D2DB4252B8 /* RoomCaptureViewRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF803909BEF2224B4A6D8E3 /* RoomCaptureViewRep.swift */; };
+		5B6044E20F3E4AFCACADFD67 /* SampleSeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A2D43B85C972E900FAFCF /* SampleSeeder.swift */; };
+		5FE96BC976DC2B345299299F /* RoomScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE98A7628BAB4CC4C85D3F07 /* RoomScanController.swift */; };
+		71399DEA63EE572613DCD8FA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2460B722974411A7FE154D6 /* Theme.swift */; };
+		7DD9536DE447F91E4A0992AD /* CasteletStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F0D7E38E4DE60C97E1CD6 /* CasteletStorage.swift */; };
+		926C164CBA14A1C4E80AEA15 /* ScanFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF72C21928D87D5C2219713C /* ScanFlowView.swift */; };
+		94F74DD7BB7B6927DAF9BD56 /* GalerieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D88EB03A44D2EAD6D8DB59 /* GalerieView.swift */; };
+		955D5954144012F50312CEBE /* DollhouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0876261E9D90724FF324A7D /* DollhouseView.swift */; };
+		98269786E7A776EE434EFAAE /* LeCasteletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D456A89E2A9AE2AC9E3C4 /* LeCasteletApp.swift */; };
+		9FC5820D9FEFA5712CABEADF /* CasteletStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE222A9D4AB5043CC625F4E /* CasteletStore.swift */; };
+		CC7EE32E05D283BC678DA10B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00AD88B4F7D5A2E190D5C13E /* Assets.xcassets */; };
+		E075F9AADE2EC5D37D6353E3 /* DollhouseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6205476F7CDF1007FBEC1F4 /* DollhouseScene.swift */; };
+		EB6AE5DB7E726BD38FC50B7D /* Castelet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220CC7BA7CA2CCBA6FBCAD34 /* Castelet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00AD88B4F7D5A2E190D5C13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		066D456A89E2A9AE2AC9E3C4 /* LeCasteletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeCasteletApp.swift; sourceTree = "<group>"; };
+		071A2D43B85C972E900FAFCF /* SampleSeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSeeder.swift; sourceTree = "<group>"; };
+		0FE222A9D4AB5043CC625F4E /* CasteletStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasteletStore.swift; sourceTree = "<group>"; };
+		220CC7BA7CA2CCBA6FBCAD34 /* Castelet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Castelet.swift; sourceTree = "<group>"; };
+		27D88EB03A44D2EAD6D8DB59 /* GalerieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalerieView.swift; sourceTree = "<group>"; };
+		52E14416D51FC944EEF5F185 /* SampleRoom.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = SampleRoom.usdz; sourceTree = "<group>"; };
+		65C3B911B241BD961516FA29 /* ThumbnailRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRenderer.swift; sourceTree = "<group>"; };
+		860579C3425C67D2268624F7 /* LeCastelet.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LeCastelet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B5F0D7E38E4DE60C97E1CD6 /* CasteletStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasteletStorage.swift; sourceTree = "<group>"; };
+		A0876261E9D90724FF324A7D /* DollhouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollhouseView.swift; sourceTree = "<group>"; };
+		B6205476F7CDF1007FBEC1F4 /* DollhouseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollhouseScene.swift; sourceTree = "<group>"; };
+		BFF803909BEF2224B4A6D8E3 /* RoomCaptureViewRep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureViewRep.swift; sourceTree = "<group>"; };
+		C2460B722974411A7FE154D6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D100412B811C5DA398C70BB8 /* LightingMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingMood.swift; sourceTree = "<group>"; };
+		DE98A7628BAB4CC4C85D3F07 /* RoomScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomScanController.swift; sourceTree = "<group>"; };
+		DF72C21928D87D5C2219713C /* ScanFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFlowView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		445491CC86275C25D0491C46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00AD88B4F7D5A2E190D5C13E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45376C2898C5F64111BEB8C4 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				B6205476F7CDF1007FBEC1F4 /* DollhouseScene.swift */,
+				D100412B811C5DA398C70BB8 /* LightingMood.swift */,
+				DE98A7628BAB4CC4C85D3F07 /* RoomScanController.swift */,
+				65C3B911B241BD961516FA29 /* ThumbnailRenderer.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		53F3B9C4BC2971E04ECFBE17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				860579C3425C67D2268624F7 /* LeCastelet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C14D74D535729CFF9D7127F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0876261E9D90724FF324A7D /* DollhouseView.swift */,
+				27D88EB03A44D2EAD6D8DB59 /* GalerieView.swift */,
+				BFF803909BEF2224B4A6D8E3 /* RoomCaptureViewRep.swift */,
+				DF72C21928D87D5C2219713C /* ScanFlowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1FAFD02D1C72AE34A38F2A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				066D456A89E2A9AE2AC9E3C4 /* LeCasteletApp.swift */,
+				C2460B722974411A7FE154D6 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C5547AFACACD9B44B88919E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				220CC7BA7CA2CCBA6FBCAD34 /* Castelet.swift */,
+				8B5F0D7E38E4DE60C97E1CD6 /* CasteletStorage.swift */,
+				0FE222A9D4AB5043CC625F4E /* CasteletStore.swift */,
+				071A2D43B85C972E900FAFCF /* SampleSeeder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB3F692B074F640BBBDBE1BE = {
+			isa = PBXGroup;
+			children = (
+				A1FAFD02D1C72AE34A38F2A1 /* App */,
+				45376C2898C5F64111BEB8C4 /* Engine */,
+				C5547AFACACD9B44B88919E1 /* Model */,
+				445491CC86275C25D0491C46 /* Resources */,
+				E216E8FCEA25D97C0B650F56 /* Sample */,
+				5C14D74D535729CFF9D7127F /* Views */,
+				53F3B9C4BC2971E04ECFBE17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E216E8FCEA25D97C0B650F56 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				52E14416D51FC944EEF5F185 /* SampleRoom.usdz */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9C4D76E9ACD0D520AE9CE7C /* LeCastelet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A53A666DEA7DA4AABE6DBCAF /* Build configuration list for PBXNativeTarget "LeCastelet" */;
+			buildPhases = (
+				ADF529616701B985D339FB24 /* Sources */,
+				783D78132E4E8F631187095E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeCastelet;
+			packageProductDependencies = (
+			);
+			productName = LeCastelet;
+			productReference = 860579C3425C67D2268624F7 /* LeCastelet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		783D2419A11B1BD64E628668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B9C4D76E9ACD0D520AE9CE7C = {
+						DevelopmentTeam = 9WZ66DZ69J;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 789D91B0B4A971E4895A99D4 /* Build configuration list for PBXProject "LeCastelet" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DB3F692B074F640BBBDBE1BE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 53F3B9C4BC2971E04ECFBE17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9C4D76E9ACD0D520AE9CE7C /* LeCastelet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		783D78132E4E8F631187095E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7EE32E05D283BC678DA10B /* Assets.xcassets in Resources */,
+				0A5524BCD6190388AD82B9C3 /* SampleRoom.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF529616701B985D339FB24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6AE5DB7E726BD38FC50B7D /* Castelet.swift in Sources */,
+				7DD9536DE447F91E4A0992AD /* CasteletStorage.swift in Sources */,
+				9FC5820D9FEFA5712CABEADF /* CasteletStore.swift in Sources */,
+				E075F9AADE2EC5D37D6353E3 /* DollhouseScene.swift in Sources */,
+				955D5954144012F50312CEBE /* DollhouseView.swift in Sources */,
+				94F74DD7BB7B6927DAF9BD56 /* GalerieView.swift in Sources */,
+				98269786E7A776EE434EFAAE /* LeCasteletApp.swift in Sources */,
+				54F85B0E84E440FC9C4A7311 /* LightingMood.swift in Sources */,
+				55D62FE9803985D2DB4252B8 /* RoomCaptureViewRep.swift in Sources */,
+				5FE96BC976DC2B345299299F /* RoomScanController.swift in Sources */,
+				5B6044E20F3E4AFCACADFD67 /* SampleSeeder.swift in Sources */,
+				926C164CBA14A1C4E80AEA15 /* ScanFlowView.swift in Sources */,
+				71399DEA63EE572613DCD8FA /* Theme.swift in Sources */,
+				50EDED42A2F825AE5B850FF6 /* ThumbnailRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5DDBCB3B696609519E1F13E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jac.LeCastelet;
+				PRODUCT_NAME = LeCastelet;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85F04E4F9CF89DF10EDF7279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9WZ66DZ69J;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		90518717F4F32776DB847D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jac.LeCastelet;
+				PRODUCT_NAME = LeCastelet;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9137A0F2E12D51AE296A628F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9WZ66DZ69J;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		789D91B0B4A971E4895A99D4 /* Build configuration list for PBXProject "LeCastelet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9137A0F2E12D51AE296A628F /* Debug */,
+				85F04E4F9CF89DF10EDF7279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A53A666DEA7DA4AABE6DBCAF /* Build configuration list for PBXNativeTarget "LeCastelet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDBCB3B696609519E1F13E3 /* Debug */,
+				90518717F4F32776DB847D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 783D2419A11B1BD64E628668 /* Project object */;
+}
